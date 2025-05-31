@@ -1,0 +1,184 @@
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: func.return func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.getelementptr llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.getelementptr arith.xori llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield llvm.mlir.constant func.func arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: memref linalg builtin func llvm
+ops: memref.get_global llvm.mlir.addressof func.return linalg.yield llvm.call llvm.mlir.global memref.global memref.alloc func.func llvm.mlir.constant func.call memref.copy llvm.func linalg.map linalg.index builtin.module memref.cast
+dialects: memref linalg builtin func llvm
+ops: memref.get_global llvm.mlir.addressof func.return linalg.yield llvm.call llvm.mlir.global memref.global memref.alloc func.func llvm.mlir.constant func.call memref.copy llvm.func linalg.map builtin.module memref.cast
+dialects: func builtin llvm linalg
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: func builtin llvm linalg
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref builtin func scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func arith cf llvm
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith cf llvm
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: func builtin arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: func builtin arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.getelementptr arith.xori llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.getelementptr arith.xori llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.getelementptr builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin bufferization func arith llvm
+ops: llvm.mlir.addressof func.return builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func bufferization.op.tensor arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin bufferization func arith llvm
+ops: llvm.mlir.addressof func.return builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func bufferization.op.tensor arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin bufferization func arith llvm
+ops: llvm.mlir.addressof func.return builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func bufferization.op.tensor arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin bufferization func arith llvm
+ops: llvm.mlir.addressof func.return builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func bufferization.op.tensor arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin bufferization func arith llvm
+ops: llvm.mlir.addressof func.return builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func bufferization.op.tensor arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin bufferization func arith llvm
+ops: llvm.mlir.addressof func.return builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func bufferization.op.tensor arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin bufferization func arith llvm
+ops: llvm.mlir.addressof func.return builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func bufferization.op.tensor arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin bufferization func arith llvm
+ops: llvm.mlir.addressof func.return builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func bufferization.op.tensor arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate
+dialects: tensor builtin bufferization func arith llvm
+ops: llvm.mlir.addressof func.return builtin.unrealized_conversion_cast llvm.call llvm.mlir.global llvm.xor tensor.yield llvm.mlir.constant func.op.tensor func.func bufferization.op.tensor arith.op.tensor func.func.tensor tensor.extract llvm.func tensor.cast builtin.module tensor.generate

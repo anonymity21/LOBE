@@ -1,0 +1,294 @@
+{
+    "affine.op": {
+        "--affine-data-copy-generate": [
+            "generate-dma=false fast-mem-space=0 skip-non-unit-stride-loops",
+            "generate-dma=false fast-mem-space=0 fast-mem-capacity=1",
+            "generate-dma fast-mem-space=2 skip-non-unit-stride-loops",
+            "generate-dma fast-mem-capacity=16 fast-mem-space=2"
+        ],
+        "--test-constant-fold": [],
+        "--affine-loop-fusion": [
+            "fusion-maximal",
+            "mode=producer",
+            "fusion-maximal mode=sibling",
+            "mode=producer fusion-maximal",
+            "fusion-compute-tolerance=0"
+        ],
+        "--affine-loop-tile": [
+            "tile-size=32",
+            "cache-size=512"
+        ],
+        "--affine-loop-unroll": [
+            "unroll-full",
+            "unroll-full unroll-full-threshold=2",
+            "unroll-factor=4",
+            "unroll-factor=2"
+        ],
+        "--affine-loop-unroll-jam": [
+            "unroll-jam-factor=2"
+        ],
+        "--affine-parallelize": [
+            "max-nested=1",
+            "parallel-reductions=1"
+        ],
+        "--affine-super-vectorize": [
+            "virtual-vector-size=128",
+            "virtual-vector-size=32,256 test-fastest-varying=1,0",
+            "virtual-vector-size=128 test-fastest-varying=0 vectorize-reductions=true"
+        ],
+        "--affine-super-vectorizer-test": [
+            "forward-slicing=true",
+            "backward-slicing=true",
+            "slicing=true",
+            "compose-maps",
+            "vector-shape-ratio=4,8",
+            "vector-shape-ratio=2,5,2",
+            "vectorize-affine-loop-nest"
+        ],
+        "--test-affine-access-analysis": [],
+        "--test-affine-data-copy": [
+            "for-memref-region",
+            "memref-filter"
+        ],
+        "--test-affine-loop-unswitch": [],
+        "--test-affine-parametric-tile": [],
+        "--test-affine-reify-value-bounds": [
+            "reify-to-func-args",
+            "use-arith-ops"
+        ],
+        "--test-loop-fusion": [
+            "test-loop-fusion-dependence-check",
+            "test-loop-fusion-slice-computation",
+            "test-loop-fusion-transformation"
+        ],
+        "--test-loop-permutation": [
+            "permutation-map=2,0,1"
+        ],
+        "--affine-scalrep": [],
+        "--test-affine-walk": [],
+        "--test-decompose-affine-ops": [],
+        "--affine-expand-index-ops": [],
+        "--affine-expand-index-ops-as-affine": [],
+        "--affine-loop-coalescing": [],
+        "--affine-loop-invariant-code-motion": [],
+        "--affine-loop-normalize": [],
+        "--affine-pipeline-data-transfer": [],
+        "--affine-simplify-structures": []
+    },
+    "arith.op": {
+        "--arith-expand": [
+            "include-bf16"
+        ],
+        "--arith-unsigned-when-equivalent": [],
+        "--arith-emulate-unsupported-floats": [
+            "source-types=bf16,f8E4M3FNUZ target-type=f32"
+        ],
+        "--arith-emulate-wide-int": [
+            "widest-int-supported=32"
+        ],
+        "--test-arith-emulate-wide-int": [
+            "widest-int-supported=8"
+        ],
+        "--test-emulate-narrow-int": [
+            "arith-compute-bitwidth=8",
+            "memref-load-bitwidth=8",
+            "memref-load-bitwidth=32",
+            "arith-compute-bitwidth=1 memref-load-bitwidth=32"
+        ],
+        "--arith-int-range-narrowing": [
+            "int-bitwidths-supported=32"
+        ],
+        "--int-range-optimizations": []
+    },
+    "func.op": {
+        "--duplicate-function-elimination": [],
+        "--test-func-erase-arg": [],
+        "--test-func-erase-result": [],
+        "--test-func-insert-arg": [],
+        "--test-func-insert-result": [],
+        "--test-func-set-type": [],
+        "--test-function-pass": []
+    },
+    "linalg.op": {
+        "--convert-elementwise-to-linalg": [],
+        "--linalg-fold-unit-extent-dims": [
+            "use-rank-reducing-slices"
+        ],
+        "--linalg-fuse-elementwise-ops": [],
+        "--linalg-generalize-named-ops": [],
+        "--linalg-inline-scalar-operands": [],
+        "--linalg-named-op-conversion": [],
+        "--linalg-specialize-generic-ops": [],
+        "--test-linalg-data-layout-propagation": [],
+        "--test-linalg-decompose-ops": [
+            "remove-dead-args-and-results"
+        ],
+        "--test-linalg-drop-unit-dims": [],
+        "--test-linalg-greedy-fusion": [],
+        "--test-linalg-pad-fusion": [],
+        "--test-linalg-rank-reduce-contraction-ops": [],
+        "--test-linalg-elementwise-fusion-patterns": [
+            "collapse-dimensions-control=2,3",
+            "fuse-with-reshape-by-collapsing",
+            "fuse-with-reshape-by-collapsing-control",
+            "fuse-generic-ops-control",
+            "fuse-multiuse-producer",
+            "control-fusion-by-expansion",
+            "fuse-with-reshape-by-expansion"
+        ],
+        "--test-linalg-transform-patterns": [
+            "test-bubble-up-extract-slice-op-pattern",
+            "test-erase-unused-operands-and-results",
+            "test-erase-unnecessary-inputs",
+            "test-vector-transfer-forwarding-patterns",
+            "test-generalize-pad-tensor",
+            "test-generalize-tensor-unpack",
+            "test-swap-subtensor-padtensor",
+            "test-swap-extract-slice-with-fill-pattern",
+            "test-patterns",
+            "test-linalg-to-vector-patterns",
+            "test-decompose-winograd-ops",
+            "test-winograd-conv2d"
+        ]
+    },
+    "llvm.op": {
+        "--ensure-debug-info-scope-on-llvm-func": [],
+        "--llvm-add-comdats": [],
+        "--llvm-legalize-for-export": [],
+        "--llvm-optimize-for-nvvm-target": [],
+        "--llvm-request-c-wrappers": []
+    },
+    "math.op": {
+        "--math-extend-to-supported-types": [],
+        "--math-uplift-to-fma": [],
+        "--test-math-algebraic-simplification": [],
+        "--test-math-polynomial-approximation": [
+            "enable-avx2"
+        ],
+        "--test-expand-math": [],
+        "--test-math-to-vcix": []
+    },
+    "memref.op": {
+        "--expand-realloc": [
+            "emit-deallocs"
+        ],
+        "--expand-strided-metadata": [],
+        "--fold-memref-alias-ops": [],
+        "--memref-emulate-wide-int": [
+            "widest-int-supported=32"
+        ],
+        "--memref-expand": [],
+        "--normalize-memrefs": [],
+        "--resolve-ranked-shaped-type-result-dims": [],
+        "--resolve-shaped-type-result-dims": [],
+        "--test-memref-bound-check": [],
+        "--test-memref-dependence-check": [],
+        "--test-memref-stride-calculation": []
+    },
+    "scf.op": {
+        "--scf-for-loop-canonicalization": [],
+        "--scf-for-loop-peeling": [
+            "peel-front",
+            "skip-partial"
+        ],
+        "--scf-for-loop-range-folding": [],
+        "--scf-for-loop-specialization": [],
+        "--scf-for-to-while": [],
+        "--scf-forall-to-for": [],
+        "--scf-forall-to-parallel": [],
+        "--scf-parallel-loop-fusion": [],
+        "--scf-parallel-loop-specialization": [],
+        "--test-scf-parallel-loop-collapsing": [
+            "collapsed-indices-0=1  collapsed-indices-2=2",
+            "collapsed-indices-0=0  collapsed-indices-1=2"
+        ],
+        "--test-scf-for-utils": [
+            "test-replace-with-new-yields"
+        ],
+        "--test-scf-if-utils": [],
+        "--test-scf-pipelining": [
+            "annotate",
+            "no-epilogue-peeling"
+        ],
+        "--test-scf-uplift-while-to-for": [],
+        "--test-scf-while-op-builder": [],
+        "--scf-parallel-loop-tiling": [
+            "parallel-loop-tile-sizes=0,0",
+            "parallel-loop-tile-sizes=1,4 no-min-max-bounds=true"
+        ]
+    },
+    "tensor.op": {
+        "--fold-tensor-subset-ops": [],
+        "--test-tensor-copy-insertion": [
+            "allow-return-allocs-from-loops",
+            "bufferize-function-boundaries",
+            "must-infer-memory-space"
+        ],
+        "--test-tensor-transform-patterns": [
+            "test-drop-redundant-insert-slice-rank-expansion",
+            "test-fold-consecutive-insert-extract-slice",
+            "test-fold-constant-extract-slice",
+            "test-fold-into-pack-and-unpack",
+            "test-reassociative-reshape-folding",
+            "test-rewrite-extract-slice-from-collapse-shape",
+            "test-simplify-pack-unpack-patterns",
+            "test-tracking-listener",
+            "use-foreach"
+        ]
+    },
+    "tosa.op": {
+        "--tosa-infer-shapes": [],
+        "--tosa-layerwise-constant-fold": [
+            "aggressive-reduce-constant"
+        ],
+        "--tosa-make-broadcastable": [],
+        "--tosa-optional-decompositions": [],
+        "--tosa-reduce-transposes": [],
+        "--tosa-test-quant-utils": [],
+        "--tosa-validate": [
+            "profile=bi,mi,mt strict-op-spec-alignment",
+            "profile=bi,mi,mt"
+        ]
+    },
+    "async.op": {
+        "-async-func-to-async-runtime": [],
+        "--async-parallel-for": [
+            "async-dispatch=true",
+            "async-dispatch=false",
+            "async-dispatch=false num-workers=20 min-task-size=1",
+            "num-workers=-1"
+        ],
+        "--async-runtime-policy-based-ref-counting": [],
+        "--async-runtime-ref-counting-opt": [],
+        "--async-to-async-runtime": []
+    },
+    "vector.op": {
+        "-lower-vector-mask": [],
+        "-lower-vector-multi-reduction": [
+            "lowering-strategy=inner-reduction",
+            "lowering-strategy=inner-parallel"
+        ],
+        "--test-create-vector-broadcast": [],
+        "--test-vector-extract-strided-slice-lowering": [],
+        "--test-vector-unrolling-patterns": [
+            "unroll-based-on-type unroll-order=2,0,1",
+            "unroll-based-on-type",
+            "unroll-based-on-type unroll-order=0,3,1,2"
+        ],
+        "--test-vector-transferop-opt": [],
+        "--test-vector-contraction-prepare-for-mmt-lowering": [],
+        "--test-vector-chained-reduction-folding-patterns": [],
+        "--test-vector-transfer-collapse-inner-most-dims": [],
+        "--test-scalar-vector-transfer-lowering": [
+            "allow-multiple-uses"
+        ],
+        "--test-vector-linearize": [
+            "target-vector-bitwidth=128",
+            "target-vector-bitwidth=0"
+        ],
+        "--test-vector-to-vector-lowering": [
+            "unroll"
+        ],
+        "--test-vector-gather-lowering": []
+    }
+}

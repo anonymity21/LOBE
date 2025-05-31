@@ -1,0 +1,6 @@
+{
+    "//workspace/mlir-inconsistent/third_party_tools/mlir-opt-449e2f5d66 //workspace/mlir-inconsistent/ratte_seed_v1/arithsem.a747321d9e8b2d55.mlir -convert-arith-to-llvm | //workspace/mlir-inconsistent/third_party_tools/mlir-opt-449e2f5d66 -convert-vector-to-llvm | //workspace/mlir-inconsistent/third_party_tools/mlir-opt-449e2f5d66 -convert-scf-to-cf | //workspace/mlir-inconsistent/third_party_tools/mlir-opt-449e2f5d66 -convert-arith-to-llvm | //workspace/mlir-inconsistent/third_party_tools/mlir-opt-449e2f5d66 -convert-cf-to-llvm | //workspace/mlir-inconsistent/third_party_tools/mlir-opt-449e2f5d66 -convert-func-to-llvm | //workspace/mlir-inconsistent/third_party_tools/mlir-opt-449e2f5d66 -reconcile-unrealized-casts | timeout 10 //MLIR/llvm-release/llvm-project/build/bin/mlir-cpu-runner -e main -entry-point-result=void --shared-libs=//MLIR/llvm-release/llvm-project/build/lib/libmlir_c_runner_utils.so --shared-libs=//MLIR/llvm-release/llvm-project/build/lib/libmlir_runner_utils.so --shared-libs=//MLIR/llvm-release/llvm-project/build/lib/libmlir_async_runtime.so": {
+        "base_line": "%1333=11514746181244974393",
+        "test_line": "%1333=11514746181244974393\n%"
+    }
+}

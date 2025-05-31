@@ -1,0 +1,70 @@
+# ==== Ratte 20 ====
+# Warning: //workspace/mlir-inconsistent/ratte_seed_v3/arithsem.e70e0400e981759f.mlir ---- has too many errors: 206.
+# Total NORMAL results: 8999.6
+# Total CONVERT_ERROR results: 470.8
+# Lowering Success Rate: 95.03%
+# ==== Ratte 30 ====
+# Warning: //workspace/mlir-inconsistent/ratte_seed_v3/arithsem.e70e0400e981759f.mlir ---- has too many errors: 158.
+# Total NORMAL results: 9081.0
+# Total CONVERT_ERROR results: 307.6
+# Lowering Success Rate: 96.72%
+# ==== Ratte 40 ====
+# Warning: //workspace/mlir-inconsistent/ratte_seed_v3/arithsem.e70e0400e981759f.mlir ---- has too many errors: 128.
+# Total NORMAL results: 9057.6
+# Total CONVERT_ERROR results: 227.8
+# Lowering Success Rate: 97.55%
+# ==== Ratte 50 ====
+# Warning: //workspace/mlir-inconsistent/ratte_seed_v3/arithsem.e70e0400e981759f.mlir ---- has too many errors: 122.
+# Total NORMAL results: 9366.6
+# Total CONVERT_ERROR results: 214.8
+# Lowering Success Rate: 97.76%
+# ==== Tosa 20 ====
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v1/tosa.1a557c5726c02b4e.mlir ---- has too many errors: 107.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v1/tosa.4be3fee74f9f597d.mlir ---- has too many errors: 171.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v1/tosa.499c58727d48db3e.mlir ---- has too many errors: 275.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v1/tosa.e2eb58cdfa90dcac.mlir ---- has too many errors: 165.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v1/tosa.aec1cf549956ee15.mlir ---- has too many errors: 144.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v1/tosa.ce11734f63754b76.mlir ---- has too many errors: 186.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v1/tosa.0e4cd9fbfe6fcea9.mlir ---- has too many errors: 224.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v1/tosa.a4bf431c664146ab.mlir ---- has too many errors: 182.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v1/tosa.74730dbeeed68761.mlir ---- has too many errors: 149.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v1/tosa.95cebca668e44303.mlir ---- has too many errors: 328.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v2/tosa.9e35cfc79a6a1718.mlir ---- has too many errors: 164.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v2/tosa.1eb0cbcf849dc569.mlir ---- has too many errors: 278.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v2/tosa.fa1f33dce9a4fcc5.mlir ---- has too many errors: 144.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v2/tosa.3101717532a423fe.mlir ---- has too many errors: 210.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v2/tosa.cff16e8da3509ca5.mlir ---- has too many errors: 192.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v3/tosa.5af2823296af14d4.mlir ---- has too many errors: 151.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v3/tosa.0aad848a4c9c50b7.mlir ---- has too many errors: 201.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v3/tosa.43e83446d40af484.mlir ---- has too many errors: 108.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v3/tosa.44b9ef1c603ab6ab.mlir ---- has too many errors: 104.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v3/tosa.d67c5a5634644045.mlir ---- has too many errors: 211.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v3/tosa.a571f1fa079616a4.mlir ---- has too many errors: 128.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v3/tosa.6f2ee74e49162a0c.mlir ---- has too many errors: 135.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v3/tosa.04875f49a20fd15f.mlir ---- has too many errors: 156.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v4/tosa.4fff777b97ec1f3e.mlir ---- has too many errors: 122.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v4/tosa.a40d7cb3d68950b2.mlir ---- has too many errors: 185.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v4/tosa.29e5380ac5cc313c.mlir ---- has too many errors: 117.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v4/tosa.95c85c190ff6af12.mlir ---- has too many errors: 107.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v4/tosa.e5c038e40f59d944.mlir ---- has too many errors: 122.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v5/tosa.096e220ac00af868.mlir ---- has too many errors: 134.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v5/tosa.08f4ac4175ccd9a3.mlir ---- has too many errors: 243.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v5/tosa.28899998cf28d1ff.mlir ---- has too many errors: 148.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v5/tosa.715ce5c6c5ef3a4b.mlir ---- has too many errors: 101.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v5/tosa.681cba8729bdeab9.mlir ---- has too many errors: 151.
+# Warning: //workspace/mlir-inconsistent/tosa_seed_v5/tosa.961719c1df193af5.mlir ---- has too many errors: 197.
+# Total NORMAL results: 11329.4
+# Total CONVERT_ERROR results: 1759.8
+# Lowering Success Rate: 86.56%
+# ==== Tosa 30 ====
+# Total NORMAL results: 12822.2
+# Total CONVERT_ERROR results: 330.0
+# Lowering Success Rate: 97.49%
+# ==== Tosa 40 ====
+# Total NORMAL results: 12727.2
+# Total CONVERT_ERROR results: 254.8
+# Lowering Success Rate: 98.04%
+# ==== Tosa 50 ====
+# Total NORMAL results: 12471.2
+# Total CONVERT_ERROR results: 236.2
+# Lowering Success Rate: 98.14%

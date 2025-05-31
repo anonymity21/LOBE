@@ -1,0 +1,18 @@
+[
+    "affine",
+    "arith",
+    "bufferization",
+    "builtin",
+    "cf",
+    "func",
+    "index",
+    "linalg",
+    "llvm",
+    "math",
+    "memref",
+    "scf",
+    "tensor",
+    "tosa",
+    "ub",
+    "vector"
+]

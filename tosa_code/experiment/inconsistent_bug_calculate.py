@@ -1,0 +1,12 @@
+import json
+
+def build_dict():
+    ratte_1 = {}
+    ratte_1["--scf-for-loop-peeling=\"peel-front\""] = "//workspace/mlir-inconsistent/ratte_seed_v1/tensor.6e80bda5c4831a4b.mlir"
+    ratte_1['-sccp'] = "//workspace/mlir-inconsistent/ratte_seed_v1/linalggeneric.f3bf5193c5923600.mlir"
+
+    tosa_2['-test-math-polynomial-approximation'] = "//workspace/mlir-inconsistent/tosa_seed_v2/tosa.00e6c5311cfaf528.mlir"
+    tosa_2["--scf-for-loop-peeling=\"peel-front\""] = "//workspace/mlir-inconsistent/tosa_seed_v2/tosa.06da46c3d6cca83c.mlir"
+    tosa_2["-scf-parallel-loop-tiling"]="//workspace/mlir-inconsistent/tosa_seed_v3/tosa.4dd74c7b0767ce58.mlir"
+    tosa_2[""] = "//workspace/mlir-inconsistent/tosa_seed_v4/tosa.e14d1cdb85d98641.mlir"
+    return result_dict

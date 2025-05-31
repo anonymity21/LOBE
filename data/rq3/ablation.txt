@@ -1,0 +1,73 @@
+
+# === Summary ====
+# Total files: 24
+# Total NORMAL results: 7
+# Total CONVERT_ERROR results: 6273
+# Total Lowering Success Rate: 0.11%
+# ==== Summary ====
+# Total files: 24
+# Total NORMAL results: 15
+# Total CONVERT_ERROR results: 7525
+# Total Lowering Success Rate: 0.20%
+# ==== Summary ====
+# Total files: 24
+# Total NORMAL results: 5
+# Total CONVERT_ERROR results: 5375
+# Total Lowering Success Rate: 0.09%
+# ==== Summary ====
+# Total files: 24
+# Total NORMAL results: 14
+# Total CONVERT_ERROR results: 5666
+# Total Lowering Success Rate: 0.25%
+# ==== Summary ====
+# Total files: 23
+# Total NORMAL results: 10
+# Total CONVERT_ERROR results: 5950
+# Total Lowering Success Rate: 0.17%
+# ==== Summary ====
+# Total files: 24
+# Total NORMAL results: 0
+# Total CONVERT_ERROR results: 11360
+# Total Lowering Success Rate: 0.00%
+# ==== Summary ====
+# Total files: 24
+# Total NORMAL results: 0
+# Total CONVERT_ERROR results: 12200
+# Total Lowering Success Rate: 0.00%
+# ==== Summary ====
+# Total files: 24
+# Total NORMAL results: 0
+# Total CONVERT_ERROR results: 10760
+# Total Lowering Success Rate: 0.00%
+# ==== Summary ====
+# Total files: 24
+# Total NORMAL results: 0
+# Total CONVERT_ERROR results: 8520
+# Total Lowering Success Rate: 0.00%
+# ==== Summary ====
+# Total files: 24
+# Total NORMAL results: 1
+# Total CONVERT_ERROR results: 11159
+# Total Lowering Success Rate: 0.01%
+
+# Without Rules:
+#   TOSASmith: Success = 0.2, Fail = 10799.8, Rate = 0.00%
+#   Ratte    : Success = 10.2, Fail = 6157.8, Rate = 0.17%
+#   Total    : Success = 10.399999999999999, Fail = 16957.6, Rate = 0.06%
+# (base) szy@iscas1://workspace/mlir-inconsistent$ python3 //workspace/mlir-inconsistent/tosa_code/experiment/result_calculate.py
+# ==== Lowering Success Rate Summary ====
+# With Priority Update:
+#   TOSASmith: Success = 12822.2, Fail = 330.0, Rate = 97.49%
+#   Ratte    : Success = 9081.0, Fail = 307.6, Rate = 96.72%
+#   Total    : Success = 21903.2, Fail = 637.6, Rate = 97.17%
+
+# Without Priority Update:
+#   TOSASmith: Success = 7323.8, Fail = 3176.2, Rate = 69.75%
+#   Ratte    : Success = 8627.8, Fail = 271.6, Rate = 96.95%
+#   Total    : Success = 15951.599999999999, Fail = 3447.7999999999997, Rate = 82.23%
+
+# Without Rules:
+#   TOSASmith: Success = 0.2, Fail = 10799.8, Rate = 0.00%
+#   Ratte    : Success = 10.2, Fail = 6157.8, Rate = 0.17%
+#   Total    : Success = 10.399999999999999, Fail = 16957.6, Rate = 0.06%
+

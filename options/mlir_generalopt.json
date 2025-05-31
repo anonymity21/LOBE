@@ -1,0 +1,20 @@
+{
+    "--canonicalize": [
+        "test-convergence top-down=0",
+        "test-convergence"
+    ],
+    "--composite-fixed-point-pass": [],
+    "--control-flow-sink": [],
+    "--cse": [],
+    "--inline": [],
+    "--loop-invariant-code-motion": [],
+    "--loop-invariant-subset-hoisting": [],
+    "--mem2reg": [
+        "region-simplify"
+    ],
+    "--remove-dead-values": [],
+    "--sccp": [],
+    "--sroa": [],
+    "--symbol-dce": [],
+    "--topological-sort": []
+}

@@ -1,0 +1,277 @@
+{
+    "tosa.apply_scale": [
+        "-tosa-to-arith=\"include-apply-rescale=true\""
+    ],
+    "tosa.const": [
+        "-tosa-to-arith"
+    ],
+    "tosa.scatter": [
+        "-tosa-to-scf"
+    ],
+    "tosa.cond_if": [
+        "-tosa-to-scf"
+    ],
+    "tosa.while_loop": [
+        "-tosa-to-scf"
+    ],
+    "tosa.yield": [
+        "-tosa-to-scf"
+    ],
+    "tosa.reshape": [
+        "-tosa-to-tensor"
+    ],
+    "tosa.slice": [
+        "-tosa-to-tensor"
+    ],
+    "tosa.pad": [
+        "-tosa-to-tensor"
+    ],
+    "tosa.concat": [
+        "-tosa-to-tensor"
+    ],
+    "tosa.conv2d": [
+        "tosa-to-linalg-named"
+    ],
+    "tosa.matmul": [
+        "tosa-to-linalg-named"
+    ],
+    "tosa.transpose": [
+        "tosa-to-linalg-named"
+    ],
+    "tosa.conv3d": [
+        "tosa-to-linalg-named"
+    ],
+    "tosa.fully_connected": [
+        "tosa-to-linalg-named"
+    ],
+    "tosa.depthwise_conv": [
+        "tosa-to-linalg-named"
+    ],
+    "tosa.maxpool_2d": [
+        "tosa-to-linalg-named"
+    ],
+    "tosa.avg_pool2d": [
+        "tosa-to-linalg-named"
+    ],
+    "tosa.add": [
+        "tosa-to-linalg"
+    ],
+    "tosa.sub": [
+        "tosa-to-linalg"
+    ],
+    "tosa.mul": [
+        "tosa-to-linalg"
+    ],
+    "tosa.reciprocal": [
+        "tosa-to-linalg"
+    ],
+    "tosa.bitwise_or": [
+        "tosa-to-linalg"
+    ],
+    "tosa.logical_right_shift": [
+        "tosa-to-linalg"
+    ],
+    "tosa.logical_left_shift": [
+        "tosa-to-linalg"
+    ],
+    "tosa.bitwise_xor": [
+        "tosa-to-linalg"
+    ],
+    "tosa.bitwise_and": [
+        "tosa-to-linalg"
+    ],
+    "tosa.negate": [
+        "tosa-to-linalg"
+    ],
+    "tosa.abs": [
+        "tosa-to-linalg"
+    ],
+    "tosa.arithmetic_right_shift": [
+        "tosa-to-linalg"
+    ],
+    "tosa.int_div": [
+        "tosa-to-linalg"
+    ],
+    "tosa.bitwise_not": [
+        "tosa-to-linalg"
+    ],
+    "tosa.clz": [
+        "tosa-to-linalg"
+    ],
+    "tosa.logical_and": [
+        "tosa-to-linalg"
+    ],
+    "tosa.logical_not": [
+        "tosa-to-linalg"
+    ],
+    "tosa.logical_or": [
+        "tosa-to-linalg"
+    ],
+    "tosa.logical_xor": [
+        "tosa-to-linalg"
+    ],
+    "tosa.pow": [
+        "tosa-to-linalg"
+    ],
+    "tosa.rsqrt": [
+        "tosa-to-linalg"
+    ],
+    "tosa.sin": [
+        "tosa-to-linalg"
+    ],
+    "tosa.cos": [
+        "tosa-to-linalg"
+    ],
+    "tosa.tanh": [
+        "tosa-to-linalg"
+    ],
+    "tosa.erf": [
+        "tosa-to-linalg"
+    ],
+    "tosa.clamp": [
+        "tosa-to-linalg"
+    ],
+    "tosa.sigmoid": [
+        "tosa-to-linalg"
+    ],
+    "tosa.floor": [
+        "tosa-to-linalg"
+    ],
+    "tosa.ceil": [
+        "tosa-to-linalg"
+    ],
+    "tosa.cast": [
+        "tosa-to-linalg"
+    ],
+    "tosa.equal": [
+        "tosa-to-linalg"
+    ],
+    "tosa.select": [
+        "tosa-to-linalg"
+    ],
+    "tosa.maximum": [
+        "tosa-to-linalg"
+    ],
+    "tosa.minimum": [
+        "tosa-to-linalg"
+    ],
+    "tosa.reduce_sum": [
+        "tosa-to-linalg"
+    ],
+    "tosa.reduce_product": [
+        "tosa-to-linalg"
+    ],
+    "tosa.reduce_min": [
+        "tosa-to-linalg"
+    ],
+    "tosa.reduce_max": [
+        "tosa-to-linalg"
+    ],
+    "tosa.reduce_all": [
+        "tosa-to-linalg"
+    ],
+    "tosa.reduce_any": [
+        "tosa-to-linalg"
+    ],
+    "tosa.argmax": [
+        "tosa-to-linalg"
+    ],
+    "tosa.exp": [
+        "tosa-to-linalg"
+    ],
+    "tosa.log": [
+        "tosa-to-linalg"
+    ],
+    "tosa.greater": [
+        "tosa-to-linalg"
+    ],
+    "tosa.greater_equal": [
+        "tosa-to-linalg"
+    ],
+    "tosa.tile": [
+        "tosa-to-linalg"
+    ],
+    "tosa.reverse": [
+        "tosa-to-linalg"
+    ],
+    "tosa.gather": [
+        "tosa-to-linalg"
+    ],
+    "tensor.op": [
+        "-one-shot-bufferize=\"bufferize-function-boundaries\""
+    ],
+    "tensor.pad": [
+        "-convert-tensor-to-linalg"
+    ],
+    "bufferization.op": [
+        "-one-shot-bufferize=\"bufferize-function-boundaries\""
+    ],
+    "func.op": [
+        "-convert-func-to-llvm"
+    ],
+    "func.func.tensor": [
+        "-one-shot-bufferize=\"bufferize-function-boundaries\""
+    ],
+    "async.op": [
+        "-convert-async-to-llvm"
+    ],
+    "scf.op": [
+        "-convert-scf-to-cf"
+    ],
+    "cf.op": [
+        "-convert-cf-to-llvm"
+    ],
+    "memref.op": [
+        "-finalize-memref-to-llvm"
+    ],
+    "memref.subview": [
+        "-expand-strided-metadata"
+    ],
+    "memref.collapse_shape": [
+        "-expand-strided-metadata"
+    ],
+    "memref.expand_shape": [
+        "-expand-strided-metadata"
+    ],
+    "linalg.op": [
+        "-convert-linalg-to-loops",
+        "-convert-linalg-to-affine-loops",
+        "-convert-linalg-to-parallel-loops"
+    ],
+    "linalg.op.tensor": [
+        "-one-shot-bufferize=\"bufferize-function-boundaries\""
+    ],
+    "affine.op": [
+        "-lower-affine"
+    ],
+    "arith.op": [
+        "-convert-arith-to-llvm"
+    ],
+    "arith.op.tensor": [
+        "-one-shot-bufferize=\"bufferize-function-boundaries\""
+    ],
+    "index.op": [
+        "-convert-index-to-llvm"
+    ],
+    "vector.op": [
+        "-convert-vector-to-llvm"
+    ],
+    "vector.print.vector": [
+        "-convert-vector-to-scf"
+    ],
+    "vector.transfer_write": [
+        "-convert-vector-to-scf"
+    ],
+    "vector.transfer_read": [
+        "-convert-vector-to-scf"
+    ],
+    "vector.contract": [
+        "-convert-vector-to-scf"
+    ],
+    "math.op": [
+        "-convert-math-to-llvm"
+    ],
+    "math.erf": [
+        "-test-math-polynomial-approximation"
+    ]
+}

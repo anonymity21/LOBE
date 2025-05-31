@@ -1,0 +1,838 @@
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: func.return func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return memref.dim linalg.yield func.call memref.global memref.alloc func.func arith.constant vector.print builtin.module memref.copy linalg.map linalg.index memref.cast
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return memref.dim linalg.yield func.call memref.global memref.alloc func.func arith.constant vector.print builtin.module memref.copy linalg.map linalg.index memref.cast
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func vector llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func vector llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref builtin func vector arith affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func vector arith affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: builtin func vector arith affine llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: builtin func vector affine llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: func affine builtin llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: func affine builtin llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul arith.constant llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul arith.constant llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin func arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul arith.constant llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin func arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: func builtin arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: func builtin arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor bufferization builtin func vector arith
+ops: func.return func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.getelementptr llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.getelementptr llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: memref linalg builtin func arith llvm
+ops: memref.dim linalg.yield func.func llvm.func llvm.call memref.alloc arith.constant func.return llvm.getelementptr func.call memref.global builtin.module memref.copy linalg.index memref.cast memref.get_global llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref linalg builtin func arith llvm
+ops: memref.get_global llvm.mlir.addressof func.return linalg.yield llvm.call llvm.mlir.global memref.global memref.alloc func.func arith.constant func.call memref.copy llvm.func linalg.map builtin.module memref.cast
+dialects: memref builtin func arith llvm scf
+ops: memref.store memref.get_global llvm.mlir.addressof func.return scf.reduce llvm.call llvm.mlir.global memref.global memref.alloc func.func arith.constant scf.parallel func.call memref.copy llvm.func builtin.module memref.cast
+dialects: memref builtin func arith llvm scf
+ops: memref.store memref.get_global llvm.mlir.addressof func.return scf.reduce llvm.call llvm.mlir.global memref.global memref.alloc func.func arith.constant scf.parallel func.call memref.copy llvm.func builtin.module memref.cast
+dialects: memref builtin func arith cf llvm
+ops: memref.store func.func llvm.func llvm.call memref.alloc arith.constant func.return func.call memref.global builtin.module memref.copy arith.cmpi memref.cast cf.cond_br memref.get_global llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith cf llvm
+ops: memref.store func.func llvm.func llvm.call memref.alloc arith.constant func.return func.call memref.global builtin.module memref.copy arith.cmpi memref.cast cf.cond_br memref.get_global llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: func cf builtin llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global cf.br
+dialects: func cf builtin llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global cf.br
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast llvm.intr.smin llvm.and func.func llvm.sub arith.op.tensor llvm.or llvm.xor llvm.mul tensor.cast vector.print func.return llvm.mlir.constant builtin.module func.op.tensor tensor.yield func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: func.return builtin.unrealized_conversion_cast func.op.tensor tensor.yield llvm.mlir.constant func.func arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: memref linalg builtin func vector llvm
+ops: memref.get_global func.return builtin.unrealized_conversion_cast linalg.yield func.call memref.global memref.alloc func.func llvm.mlir.constant memref.cast builtin.module memref.copy linalg.map linalg.index vector.print
+dialects: memref linalg builtin func vector llvm
+ops: memref.get_global func.return builtin.unrealized_conversion_cast linalg.yield func.call memref.global memref.alloc func.func llvm.mlir.constant memref.cast builtin.module memref.copy linalg.map linalg.index vector.print
+dialects: memref builtin func vector affine llvm
+ops: memref.get_global func.return affine.for builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant memref.cast vector.print builtin.module memref.copy affine.yield affine.store
+dialects: memref builtin func vector affine llvm
+ops: memref.get_global func.return affine.for builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant memref.cast vector.print builtin.module memref.copy affine.yield affine.store
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store memref.get_global func.return scf.yield builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant memref.cast memref.copy scf.for builtin.module vector.print
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store memref.get_global func.return scf.yield builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant memref.cast memref.copy scf.for builtin.module vector.print
+dialects: builtin func vector arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul arith.constant llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin func vector arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul arith.constant llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin func vector llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin func vector llvm affine scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca affine.apply func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin func vector arith llvm scf
+ops: arith.select scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func arith.muli llvm.urem llvm.call llvm.mlir.zero llvm.mul arith.constant llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.remsi arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: builtin func vector arith llvm scf
+ops: arith.select scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func arith.muli llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul scf.while llvm.insertvalue vector.print scf.condition llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.remsi arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: builtin func vector llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul scf.while llvm.insertvalue llvm.icmp vector.print scf.condition llvm.intr.memcpy llvm.select func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global llvm.srem
+dialects: builtin func vector llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul scf.while llvm.insertvalue llvm.icmp vector.print scf.condition llvm.intr.memcpy llvm.select func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global llvm.srem
+dialects: builtin func vector cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy llvm.select func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global llvm.srem cf.br
+dialects: builtin func vector cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy llvm.select func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global llvm.srem cf.br
+dialects: func vector builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy llvm.select func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global llvm.srem
+dialects: func vector builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy llvm.select func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global llvm.srem
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.select func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global llvm.srem
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.select func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global llvm.srem
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.select llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global llvm.srem
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor bufferization builtin func vector arith
+ops: func.return func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return linalg.yield func.call memref.global memref.alloc func.func arith.constant memref.cast builtin.module memref.copy linalg.map linalg.index vector.print
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return linalg.yield func.call memref.global memref.alloc func.func arith.constant memref.cast builtin.module memref.copy linalg.map linalg.index vector.print
+dialects: memref builtin func vector arith affine
+ops: memref.get_global func.return affine.for func.call memref.global memref.alloc func.func arith.constant memref.cast vector.print builtin.module memref.copy affine.yield affine.store
+dialects: memref builtin func vector arith affine
+ops: memref.get_global func.return affine.for func.call memref.global memref.alloc func.func arith.constant memref.cast vector.print builtin.module memref.copy affine.yield affine.store
+dialects: builtin func vector arith affine llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: builtin func vector arith affine llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: builtin func arith affine llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: builtin func arith affine llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: func affine builtin llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: func affine builtin llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func arith cf llvm
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith cf llvm
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: memref builtin func arith llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: func memref builtin llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func memref builtin llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mul llvm.mlir.zero llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor bufferization builtin func vector arith
+ops: func.return func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: tensor builtin bufferization func vector arith llvm
+ops: func.return builtin.unrealized_conversion_cast func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: tensor builtin bufferization func vector arith llvm
+ops: func.return builtin.unrealized_conversion_cast func.op.tensor tensor.yield llvm.mlir.constant func.func bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: memref linalg builtin func vector arith llvm
+ops: memref.get_global func.return memref.dim builtin.unrealized_conversion_cast linalg.yield func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant vector.print builtin.module memref.copy linalg.map linalg.index memref.cast
+dialects: memref linalg builtin func vector arith llvm
+ops: memref.get_global func.return memref.dim builtin.unrealized_conversion_cast linalg.yield func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant vector.print builtin.module memref.copy linalg.map linalg.index memref.cast
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref builtin func vector arith affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func vector arith affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func vector llvm scf
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func vector llvm scf
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func vector arith cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func vector arith cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func vector cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global cf.br
+dialects: memref builtin func vector cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global cf.br
+dialects: builtin func vector cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global cf.br
+dialects: builtin func vector cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global cf.br
+dialects: func cf builtin llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global cf.br
+dialects: func cf builtin llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global cf.br
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor bufferization builtin func vector arith
+ops: func.return func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return linalg.yield func.call memref.global memref.alloc func.func arith.constant memref.cast builtin.module memref.copy linalg.map linalg.index vector.print
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return linalg.yield func.call memref.global memref.alloc func.func arith.constant memref.cast builtin.module memref.copy linalg.map linalg.index vector.print
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func arith cf llvm
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith cf llvm
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: memref builtin func arith llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: func memref builtin llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func memref builtin llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: func.return func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return linalg.yield func.call memref.global memref.alloc func.func arith.constant memref.cast builtin.module memref.copy linalg.map linalg.index vector.print
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return linalg.yield func.call memref.global memref.alloc func.func arith.constant memref.cast builtin.module memref.copy linalg.map linalg.index vector.print
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: memref builtin func vector llvm scf
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: memref builtin func vector llvm scf
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: builtin func vector llvm scf
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: builtin func vector llvm scf
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: builtin func vector arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func vector arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func vector cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global cf.br
+dialects: builtin func vector cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global cf.br
+dialects: func vector builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func vector builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mul llvm.mlir.zero llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mul llvm.mlir.zero llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mul llvm.mlir.zero llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: memref linalg builtin func vector arith
+ops: memref.dim linalg.yield func.func arith.maxsi arith.muli arith.ori arith.xori arith.maxui memref.alloc arith.index_castui arith.constant vector.print memref.load arith.minsi func.return arith.index_cast arith.subi func.call memref.global builtin.module memref.copy linalg.index memref.cast memref.get_global arith.andi arith.minui arith.addi linalg.map
+dialects: memref linalg builtin func vector arith
+ops: memref.dim linalg.yield func.func arith.maxsi arith.muli arith.ori arith.xori arith.maxui memref.alloc arith.index_castui arith.constant vector.print memref.load arith.minsi func.return arith.index_cast arith.subi func.call memref.global builtin.module memref.copy linalg.index memref.cast memref.get_global arith.andi arith.minui arith.addi linalg.map
+dialects: memref linalg builtin func vector llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast linalg.yield llvm.intr.smin llvm.and func.func llvm.sub llvm.or llvm.xor memref.alloc llvm.mul vector.print memref.load func.return func.call memref.global llvm.mlir.constant builtin.module memref.copy linalg.index memref.cast memref.get_global linalg.map
+dialects: memref linalg builtin func vector llvm
+ops: memref.load memref.get_global func.return llvm.or builtin.unrealized_conversion_cast linalg.yield func.call memref.global memref.alloc func.func llvm.mlir.constant memref.cast builtin.module memref.copy linalg.map vector.print
+dialects: linalg builtin func vector llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global linalg.map
+dialects: linalg builtin func vector llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global linalg.map
+dialects: func builtin llvm linalg
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global linalg.map
+dialects: func builtin llvm linalg
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global linalg.map
+dialects: memref builtin func arith affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global affine.store
+dialects: memref builtin func arith affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global affine.store
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: memref builtin func arith cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global cf.br
+dialects: memref builtin func cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global cf.br
+dialects: func cf builtin llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global cf.br
+dialects: func cf builtin llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global cf.br
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor bufferization builtin func vector arith
+ops: func.return func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return linalg.yield func.call memref.global memref.alloc func.func arith.constant memref.cast builtin.module memref.copy linalg.map linalg.index vector.print
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return linalg.yield func.call memref.global memref.alloc func.func arith.constant memref.cast builtin.module memref.copy linalg.map linalg.index vector.print
+dialects: memref builtin func vector arith scf
+ops: memref.store memref.get_global func.return scf.yield func.call memref.global memref.alloc func.func arith.constant memref.cast memref.copy scf.for builtin.module vector.print
+dialects: memref builtin func vector arith scf
+ops: memref.store memref.get_global func.return scf.yield func.call memref.global memref.alloc func.func arith.constant memref.cast memref.copy scf.for builtin.module vector.print
+dialects: builtin func vector arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mul arith.constant llvm.mlir.zero llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin func vector arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mul arith.constant llvm.mlir.zero llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin func vector arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func vector arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: func cf builtin llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global cf.br
+dialects: func cf builtin llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global cf.br
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mul llvm.mlir.zero llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast llvm.intr.smin llvm.and func.func llvm.sub arith.op.tensor llvm.or llvm.xor llvm.mul tensor.cast vector.print func.return llvm.mlir.constant builtin.module func.op.tensor tensor.yield func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: func.return builtin.unrealized_conversion_cast func.op.tensor tensor.yield llvm.mlir.constant func.func arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: memref linalg builtin func vector arith llvm
+ops: memref.get_global func.return memref.dim builtin.unrealized_conversion_cast linalg.yield func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant vector.print builtin.module memref.copy linalg.map linalg.index memref.cast
+dialects: memref linalg builtin func vector arith llvm
+ops: memref.get_global func.return memref.dim builtin.unrealized_conversion_cast linalg.yield func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant vector.print builtin.module memref.copy linalg.map linalg.index memref.cast
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: func builtin llvm linalg
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: func builtin llvm linalg
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: memref builtin func llvm scf
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: memref builtin func llvm scf
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: memref builtin func arith cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: func builtin llvm arith
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func builtin llvm arith
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast llvm.intr.smin llvm.and func.func llvm.sub arith.op.tensor llvm.or llvm.xor llvm.mul tensor.cast vector.print func.return llvm.mlir.constant builtin.module func.op.tensor tensor.yield func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: func.return builtin.unrealized_conversion_cast func.op.tensor tensor.yield llvm.mlir.constant func.func arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: memref linalg builtin func vector arith llvm
+ops: memref.get_global func.return memref.dim builtin.unrealized_conversion_cast linalg.yield func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant vector.print builtin.module memref.copy linalg.map linalg.index memref.cast
+dialects: memref linalg builtin func vector llvm
+ops: memref.get_global func.return builtin.unrealized_conversion_cast linalg.yield func.call memref.global memref.alloc func.func llvm.mlir.constant memref.cast builtin.module memref.copy linalg.map vector.print
+dialects: memref builtin func vector affine llvm
+ops: memref.get_global func.return affine.for builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant memref.cast vector.print builtin.module memref.copy affine.yield affine.store
+dialects: memref builtin func vector affine llvm
+ops: memref.get_global func.return affine.for builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant memref.cast vector.print builtin.module memref.copy affine.yield affine.store
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store memref.get_global scf.for func.return scf.yield builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant memref.cast builtin.module memref.copy vector.print
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store memref.get_global scf.for func.return scf.yield builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant memref.cast builtin.module memref.copy vector.print
+dialects: memref builtin func vector arith cf llvm
+ops: memref.store memref.get_global arith.cmpi func.return builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant memref.cast arith.addi vector.print builtin.module memref.copy cf.br cf.cond_br
+dialects: memref builtin func vector arith cf llvm
+ops: memref.store memref.get_global arith.cmpi func.return builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func arith.constant llvm.mlir.constant memref.cast arith.addi vector.print builtin.module memref.copy cf.br cf.cond_br
+dialects: memref builtin func arith cf llvm
+ops: memref.store builtin.unrealized_conversion_cast func.func llvm.func llvm.call memref.alloc arith.constant func.return llvm.getelementptr func.call memref.global llvm.mlir.constant builtin.module memref.copy arith.cmpi memref.cast cf.cond_br memref.get_global llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith cf llvm
+ops: memref.store builtin.unrealized_conversion_cast func.func llvm.func llvm.call memref.alloc arith.constant func.return llvm.getelementptr func.call memref.global llvm.mlir.constant builtin.module memref.copy arith.cmpi memref.cast cf.cond_br memref.get_global llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mul arith.constant llvm.mlir.zero llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mul arith.constant llvm.mlir.zero llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: func builtin arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mul arith.constant llvm.mlir.zero llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: func builtin arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mul arith.constant llvm.mlir.zero llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast llvm.intr.smin llvm.and func.func llvm.sub arith.op.tensor llvm.or llvm.xor llvm.mul tensor.cast vector.print func.return llvm.mlir.constant builtin.module func.op.tensor tensor.yield func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast llvm.intr.smin llvm.and func.func llvm.sub arith.op.tensor llvm.or llvm.xor llvm.mul tensor.cast vector.print func.return llvm.mlir.constant builtin.module func.op.tensor tensor.yield func.func.tensor tensor.generate
+dialects: memref linalg builtin func vector arith llvm
+ops: llvm.intr.umax memref.dim llvm.add builtin.unrealized_conversion_cast linalg.yield llvm.intr.smin llvm.and func.func llvm.sub llvm.or llvm.xor memref.alloc llvm.mul arith.constant vector.print func.return func.call memref.global llvm.mlir.constant builtin.module memref.copy linalg.index memref.cast memref.get_global linalg.map
+dialects: memref linalg builtin func vector arith llvm
+ops: llvm.intr.umax memref.dim llvm.add builtin.unrealized_conversion_cast linalg.yield llvm.intr.smin llvm.and func.func llvm.sub llvm.or llvm.xor memref.alloc llvm.mul arith.constant vector.print func.return func.call memref.global llvm.mlir.constant builtin.module memref.copy linalg.index memref.cast memref.get_global linalg.map
+dialects: linalg builtin func vector arith llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast linalg.yield llvm.intr.smin llvm.and func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.xor llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func vector arith llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast linalg.yield llvm.intr.smin llvm.and func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.xor llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref builtin func vector arith affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func vector arith affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func vector affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func vector affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue affine.yield vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func affine llvm
+ops: memref.dim llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul arith.constant llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul arith.constant llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin func arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul arith.constant llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin func arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: func builtin arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func builtin arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor bufferization builtin func vector arith
+ops: func.return func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return memref.dim linalg.yield func.call memref.global memref.alloc func.func arith.constant vector.print builtin.module memref.copy linalg.map linalg.index memref.cast
+dialects: memref linalg builtin func vector arith
+ops: memref.get_global func.return memref.dim linalg.yield func.call memref.global memref.alloc func.func arith.constant vector.print builtin.module memref.copy linalg.map linalg.index memref.cast
+dialects: memref builtin func vector arith scf
+ops: memref.store memref.get_global func.return scf.reduce func.call memref.global memref.alloc func.func arith.constant scf.parallel memref.cast builtin.module memref.copy vector.print
+dialects: memref builtin func vector arith scf
+ops: memref.store memref.get_global func.return scf.reduce func.call memref.global memref.alloc func.func arith.constant scf.parallel memref.cast builtin.module memref.copy vector.print
+dialects: builtin func vector arith llvm scf
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: builtin func vector arith llvm scf
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.mlir.global scf.parallel
+dialects: builtin func vector arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func vector arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: builtin func vector arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: builtin func vector arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: func vector builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func vector builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: memref linalg builtin func vector arith
+ops: memref.dim linalg.yield func.func arith.maxsi arith.muli arith.ori arith.xori arith.maxui memref.alloc arith.index_castui arith.constant vector.print memref.load arith.minsi func.return arith.index_cast arith.subi func.call memref.global builtin.module memref.copy linalg.index memref.cast memref.get_global arith.andi arith.minui arith.addi linalg.map
+dialects: memref linalg builtin func vector arith
+ops: memref.dim linalg.yield func.func arith.maxsi arith.muli arith.ori arith.xori arith.maxui memref.alloc arith.index_castui arith.constant vector.print memref.load arith.minsi func.return arith.index_cast arith.subi func.call memref.global builtin.module memref.copy linalg.index memref.cast memref.get_global arith.andi arith.minui arith.addi linalg.map
+dialects: memref builtin func vector arith affine
+ops: memref.load memref.get_global arith.ori func.return affine.for func.call memref.global memref.alloc func.func arith.constant memref.cast vector.print builtin.module memref.copy affine.yield affine.store
+dialects: memref builtin func vector arith affine
+ops: memref.load memref.get_global arith.ori func.return affine.for func.call memref.global memref.alloc func.func arith.constant memref.cast vector.print builtin.module memref.copy affine.yield affine.store
+dialects: memref builtin func vector affine llvm
+ops: memref.load memref.get_global func.return affine.for llvm.or builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant memref.cast vector.print builtin.module memref.copy affine.yield affine.store
+dialects: memref builtin func vector affine llvm
+ops: memref.load memref.get_global func.return affine.for llvm.or builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant memref.cast vector.print builtin.module memref.copy affine.yield affine.store
+dialects: memref builtin func vector scf arith llvm
+ops: memref.load memref.get_global memref.store scf.for func.return scf.yield llvm.or builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant memref.cast builtin.module memref.copy vector.print
+dialects: memref builtin func vector scf arith llvm
+ops: memref.load memref.get_global memref.store scf.for func.return scf.yield llvm.or builtin.unrealized_conversion_cast func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant memref.cast builtin.module memref.copy vector.print
+dialects: builtin func vector arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul arith.constant llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin func vector arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul arith.constant llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin func vector llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin func vector arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul scf.while llvm.insertvalue vector.print scf.condition llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: builtin func arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul scf.while llvm.insertvalue scf.condition llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: builtin func arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul scf.while llvm.insertvalue scf.condition llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: func builtin llvm arith
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func builtin llvm arith
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor bufferization builtin func vector arith
+ops: func.return func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.getelementptr llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor bufferization builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant bufferization.op.tensor arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: memref linalg builtin func arith llvm
+ops: memref.get_global llvm.mlir.addressof func.return memref.dim linalg.yield llvm.call llvm.mlir.global memref.global memref.alloc func.func arith.constant func.call memref.copy llvm.func linalg.map linalg.index builtin.module memref.cast
+dialects: memref linalg builtin func arith llvm
+ops: memref.get_global llvm.mlir.addressof func.return memref.dim linalg.yield llvm.call llvm.mlir.global memref.global memref.alloc func.func arith.constant func.call memref.copy llvm.func linalg.map linalg.index builtin.module memref.cast
+dialects: linalg builtin func arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module linalg.index llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func arith cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global cf.br
+dialects: memref builtin func cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.mlir.global cf.br
+dialects: func cf builtin llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global cf.br
+dialects: func cf builtin llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global cf.br
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: memref linalg builtin func vector arith
+ops: memref.dim linalg.yield func.func arith.maxsi arith.muli arith.ori arith.xori arith.maxui memref.alloc arith.index_castui arith.constant vector.print memref.load arith.minsi func.return arith.index_cast arith.subi func.call memref.global builtin.module memref.copy linalg.index memref.cast memref.get_global arith.andi arith.minui arith.addi linalg.map
+dialects: memref linalg builtin func vector arith
+ops: memref.dim linalg.yield func.func arith.maxsi arith.muli arith.ori arith.xori arith.maxui memref.alloc arith.index_castui arith.constant vector.print memref.load arith.minsi func.return arith.index_cast arith.subi func.call memref.global builtin.module memref.copy linalg.index memref.cast memref.get_global arith.andi arith.minui arith.addi linalg.map
+dialects: memref linalg builtin func vector llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast linalg.yield llvm.intr.smin llvm.and func.func llvm.sub llvm.or llvm.xor memref.alloc llvm.mul vector.print memref.load func.return func.call memref.global llvm.mlir.constant builtin.module memref.copy linalg.index memref.cast memref.get_global linalg.map
+dialects: memref linalg builtin func vector llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast linalg.yield llvm.intr.smin llvm.and func.func llvm.sub llvm.or llvm.xor memref.alloc llvm.mul vector.print memref.load func.return func.call memref.global llvm.mlir.constant builtin.module memref.copy linalg.index memref.cast memref.get_global linalg.map
+dialects: memref linalg builtin func llvm
+ops: builtin.unrealized_conversion_cast linalg.yield func.func llvm.func llvm.or llvm.call memref.alloc memref.load func.return llvm.getelementptr func.call memref.global llvm.mlir.constant builtin.module memref.copy memref.cast memref.get_global llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref linalg builtin func llvm
+ops: builtin.unrealized_conversion_cast linalg.yield func.func llvm.func llvm.or llvm.call memref.alloc memref.load func.return llvm.getelementptr func.call memref.global llvm.mlir.constant builtin.module memref.copy memref.cast memref.get_global llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: func builtin llvm linalg
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global linalg.map
+dialects: func builtin llvm linalg
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global linalg.map
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.load llvm.mlir.global scf.parallel
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.load llvm.mlir.global scf.parallel
+dialects: memref builtin func llvm scf
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.load llvm.mlir.global scf.parallel
+dialects: memref builtin func llvm scf
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof scf.reduce llvm.load llvm.mlir.global scf.parallel
+dialects: memref builtin func arith cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith cf llvm
+ops: memref.store memref.dim llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith llvm
+ops: memref.store llvm.cond_br memref.dim llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: memref builtin func arith llvm
+ops: memref.store llvm.cond_br memref.dim llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func builtin llvm arith
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func builtin llvm arith
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.or llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast llvm.intr.smin llvm.and func.func llvm.sub arith.op.tensor llvm.or llvm.xor llvm.mul tensor.cast vector.print func.return llvm.mlir.constant builtin.module func.op.tensor tensor.yield func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: func.return builtin.unrealized_conversion_cast func.op.tensor tensor.yield llvm.mlir.constant func.func arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: memref linalg builtin func vector arith llvm
+ops: memref.get_global func.return memref.dim builtin.unrealized_conversion_cast linalg.yield func.call memref.global memref.alloc func.func llvm.mlir.constant arith.constant vector.print builtin.module memref.copy linalg.map linalg.index memref.cast
+dialects: memref linalg builtin func vector arith llvm
+ops: memref.get_global func.return builtin.unrealized_conversion_cast linalg.yield func.call memref.global memref.alloc func.func arith.constant llvm.mlir.constant memref.cast builtin.module memref.copy linalg.map vector.print
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func vector arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func vector scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func vector llvm scf
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func vector llvm scf
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin func vector llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin func vector arith llvm scf
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul scf.while llvm.insertvalue vector.print scf.condition llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: builtin func vector arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: builtin func vector arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: builtin func vector arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: builtin func vector arith llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func vector builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func vector builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp vector.print llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: func.return func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module tensor.cast vector.print tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.getelementptr llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: tensor builtin func arith llvm
+ops: llvm.mlir.addressof func.return llvm.getelementptr llvm.call llvm.mlir.global func.op.tensor tensor.yield func.func arith.constant arith.op.tensor func.func.tensor builtin.module llvm.func tensor.cast tensor.generate
+dialects: memref linalg builtin func arith llvm
+ops: memref.dim linalg.yield func.func llvm.func llvm.call memref.alloc arith.constant func.return llvm.getelementptr func.call memref.global builtin.module memref.copy linalg.index memref.cast memref.get_global llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref linalg builtin func arith llvm
+ops: memref.dim linalg.yield func.func llvm.func llvm.call memref.alloc arith.constant func.return llvm.getelementptr func.call memref.global builtin.module memref.copy linalg.index memref.cast memref.get_global llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref builtin func arith affine llvm
+ops: memref.get_global llvm.mlir.addressof func.return affine.for llvm.call llvm.mlir.global memref.global memref.alloc func.func arith.constant memref.cast func.call memref.copy llvm.func builtin.module affine.yield affine.store
+dialects: memref builtin func arith affine llvm
+ops: memref.get_global llvm.mlir.addressof func.return affine.for llvm.call llvm.mlir.global memref.global memref.alloc func.func arith.constant memref.cast func.call memref.copy llvm.func builtin.module affine.yield affine.store
+dialects: builtin func arith affine llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: builtin func arith affine llvm
+ops: llvm.add affine.for builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue affine.yield llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global affine.store
+dialects: memref builtin func scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func scf arith llvm
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func llvm scf
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func llvm scf
+ops: memref.store scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func arith cf llvm
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith cf llvm
+ops: memref.store llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.mlir.global arith.addi cf.br
+dialects: memref builtin func arith llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: memref builtin func arith llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.mlir.global arith.addi
+dialects: func memref builtin llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func memref builtin llvm
+ops: memref.store llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br llvm.sub llvm.store llvm.inttoptr llvm.func llvm.extractvalue llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast llvm.intr.smin llvm.and func.func llvm.sub arith.op.tensor llvm.or llvm.xor llvm.mul tensor.cast vector.print func.return llvm.mlir.constant builtin.module func.op.tensor tensor.yield func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith llvm
+ops: llvm.intr.umax llvm.add builtin.unrealized_conversion_cast llvm.intr.smin llvm.and func.func llvm.sub arith.op.tensor llvm.or llvm.xor llvm.mul tensor.cast vector.print func.return llvm.mlir.constant builtin.module func.op.tensor tensor.yield func.func.tensor tensor.generate
+dialects: memref linalg builtin func vector arith llvm
+ops: llvm.intr.umax memref.dim llvm.add builtin.unrealized_conversion_cast linalg.yield llvm.intr.smin llvm.and func.func llvm.sub llvm.or llvm.xor memref.alloc llvm.mul arith.constant vector.print func.return func.call memref.global llvm.mlir.constant builtin.module memref.copy linalg.index memref.cast memref.get_global linalg.map
+dialects: memref linalg builtin func vector arith llvm
+ops: llvm.intr.umax memref.dim llvm.add builtin.unrealized_conversion_cast linalg.yield llvm.intr.smin llvm.and func.func llvm.sub llvm.or llvm.xor memref.alloc llvm.mul arith.constant vector.print func.return func.call memref.global llvm.mlir.constant builtin.module memref.copy linalg.index memref.cast memref.get_global linalg.map
+dialects: memref linalg builtin func arith llvm
+ops: builtin.unrealized_conversion_cast linalg.yield func.func llvm.func llvm.call memref.alloc arith.constant func.return llvm.getelementptr func.call memref.global llvm.mlir.constant builtin.module memref.copy memref.cast memref.get_global llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref linalg builtin func arith llvm
+ops: builtin.unrealized_conversion_cast linalg.yield func.func llvm.func llvm.call memref.alloc arith.constant func.return llvm.getelementptr func.call memref.global llvm.mlir.constant builtin.module memref.copy memref.cast memref.get_global llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: linalg builtin func arith llvm
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: func builtin llvm linalg
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: func builtin llvm linalg
+ops: llvm.add builtin.unrealized_conversion_cast linalg.yield func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global linalg.map
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func scf arith llvm
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero arith.constant llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func llvm scf
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: memref builtin func llvm scf
+ops: memref.store memref.dim scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.mlir.global
+dialects: func scf builtin llvm
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func scf builtin llvm
+ops: scf.yield llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue scf.for llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: builtin func arith cf llvm
+ops: llvm.add builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi cf.cond_br llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi cf.br
+dialects: func builtin llvm arith
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func builtin llvm arith
+ops: llvm.cond_br llvm.add builtin.unrealized_conversion_cast llvm.br func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module arith.cmpi llvm.mlir.addressof llvm.load llvm.mlir.global arith.addi
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: func builtin llvm
+ops: llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast func.func llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy func.return llvm.getelementptr llvm.alloca func.call llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: builtin llvm
+ops: llvm.return llvm.cond_br llvm.add llvm.br builtin.unrealized_conversion_cast llvm.sub llvm.store llvm.inttoptr llvm.extractvalue llvm.func llvm.urem llvm.call llvm.mlir.zero llvm.mul llvm.insertvalue llvm.icmp llvm.intr.memcpy llvm.getelementptr llvm.alloca llvm.mlir.constant llvm.ptrtoint llvm.mlir.poison builtin.module llvm.mlir.addressof llvm.load llvm.mlir.global
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
+dialects: tensor builtin func vector arith
+ops: arith.maxsi func.func arith.op.tensor arith.muli arith.ori arith.xori arith.maxui arith.index_castui arith.constant tensor.extract tensor.cast vector.print arith.minsi func.return arith.index_cast arith.subi builtin.module func.op.tensor arith.andi tensor.yield arith.minui arith.addi func.func.tensor tensor.generate
