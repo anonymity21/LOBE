@@ -172,15 +172,14 @@ def parse_args():
     )
     parser.add_argument(
         '--deduplicateprint',
-        action='store_true',
-        help="Enable the unique print."
+        action='store_false',
+        help="Disable the unique print."
     )
     return parser.parse_args()
 
 def main():
     args = parse_args()
     config.init(args.seedname, args.runtimes, args.cov, args.executiontime, args.priority, args.deduplicateprint, args.strategy) 
-    # config.all_mlirfiles = ['//workspace/mlir-inconsistent/a.mlir']
     if args.strategy == 'fullreset':
         strategy = FullResetLowering
     elif args.strategy == 'conversion':

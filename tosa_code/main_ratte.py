@@ -175,8 +175,8 @@ def parse_args():
     )
     parser.add_argument(
         '--deduplicateprint',
-        action='store_true',
-        help="Enable the unique print."
+        action='store_false',
+        help="Disable the unique print."
     )
     return parser.parse_args()
 

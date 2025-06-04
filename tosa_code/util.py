@@ -116,7 +116,7 @@ class Configuration:
 
 
        
-    def init(self,seed_name, run_times, cov=False, execution_time=1, op_priority_option=False, deduplcate=False, strategy=''):
+    def init(self,seed_name, run_times, cov=False, execution_time=1, op_priority_option=False, deduplcate=True, strategy=''):
         print('[Config.init] Init all options and mlir seeds.')
         self.seed_dir = os.path.join(self.project_dir, seed_name)
         current_datetime = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
